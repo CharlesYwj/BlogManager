@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # blog-manager
 
 > Blog manager
@@ -28,3 +29,6 @@ npm test
 ```
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+=======
+# BlogManager
+>>>>>>> ce253c810c3a8a6db1e8e11c574b399812aceb01
