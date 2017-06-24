@@ -1,0 +1,23 @@
+/**********Float***********/
+.pull-left{
+    float: left;
+}
+.pull-right{
+    float: right;
+}
+.clearfix{
+    &:after{
+        content: "";
+        display: table;
+        height: 0;
+        font-size: 0;
+        clear: both;
+    }
+}
+
+/**********margin and padding***********/
+@for $i from 1 through 8{
+    .ml#{$i * 5}{
+        margin-left: 5px;
+    }
+}

@@ -1,0 +1,80 @@
+.navbar-wrapper {
+  height: $navbarHeight;
+  .navbar {
+    position: relative;
+    z-index: 1030;
+    background-color: $navbarBackground;
+    &.navbar-black {
+      background-color: #222
+    }
+    &.navbar-fixed-top {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1030
+    }
+    .logo {
+      display: inline-block;
+      height: $navbarHeight;
+      line-height: $navbarHeight;
+      text-decoration: none;
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: auto 100%;
+      margin-right: 10px;
+      cursor: pointer;
+      &:hover {
+        text-decoration: none;
+      }
+      &.navbar-logo,&.navbar-logo-m,&.navbar-slogan,&.navbar-userbar{
+        color: $navbarColor;
+      }
+      &.navbar-logo,
+      &.navbar-logo-m {
+        font-size: 16px
+      }
+      &.navbar-slogan {
+        font-size: 12px;
+        cursor: default
+      }
+    }
+    .container {
+      position: relative;
+      .navbar-userbar {
+        right: 0;
+      }
+    }
+  }
+  .nav {
+    z-index: 1;
+    >ul {
+      font-size: 0;
+      line-height: 0;
+      >li {
+        position: relative;
+        float: left;
+        &.current>a,
+        >a:hover {
+          background-color: rgba(255, 255, 255, 0.2);
+          text-decoration: none;
+          -webkit-transition: background-color .3s ease 0s;
+          -moz-transition: background-color .3s ease 0s;
+          -o-transition: background-color .3s ease 0s;
+          -ms-transition: background-color .3s ease 0s;
+          transition: background-color .3s ease 0s;
+        }
+        &,
+        &>a {
+          line-height: 44px;
+          font-size: 14px;
+          color: $navbarColor;
+        }
+        >a {
+          display: inline-block;
+          text-align: center
+        }
+      }
+    }
+  }
+}
